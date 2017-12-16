@@ -1,0 +1,21 @@
+coin = function(){sample(0:1,1)} #Подбросить монетку один раз
+range = c(1);
+drops_range = c(1);
+
+coinDrop = function(times){ #Подбросить монетку много раз и вывести среднее количество орлов
+  for (i in 1:times){
+    range[i] = coin()
+  }
+  mean(range) 
+}
+
+ManyDrops = function(times, series){ #Провести много серий подбрасываний и вывести средние количества орлов в каждом
+  for (i in 1:series){
+    drops_range[i] = coinDrop(times)
+  }
+  drops_range 
+}
+
+getHist = function(times, series){ #Построить график распределения (количество орлов-количество выборок)
+  hist(ManyDrops(times,series))
+}
