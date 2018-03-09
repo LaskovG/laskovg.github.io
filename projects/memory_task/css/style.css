@@ -1,0 +1,66 @@
+html{
+    background: #2B2A2B;
+}
+
+#hero{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    left: calc(50% - 350px);
+    top: calc(50% - 200px);
+    overflow: hidden;
+}
+#hero img{
+    width: 700px;
+    max-height: 100%;
+}
+
+#save_btn{
+    cursor: pointer;
+    width: 233px;
+    height: 70px;
+    background: url(save.png);
+    position: absolute;
+    left: calc(50% - 350px);
+    bottom: 50px;
+}
+#delete_btn{
+    cursor: pointer;
+    width: 233px;
+    height: 70px;
+    background: url(delete.png);
+    position: absolute;
+    right: calc(50% - 350px);
+    bottom: 50px;
+}
+#info{
+    background: #4B4A4B;
+    border-radius: 16px;
+    position: absolute;
+    width: 530px;
+/*    height: 54px;*/
+    left: calc(50% - 265px);
+    top: 50px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+#arrow_right{
+    background: url(a-r.png);
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% + 350px + 40px);
+    width: 19px;
+    height: 64px;
+    cursor: pointer;
+}
+#arrow_left{
+    background: url(a-l.png);
+    position: absolute;
+    top: calc(50% - 32px);
+    right: calc(50% + 350px + 40px);
+    width: 19px;
+    height: 64px;
+}
